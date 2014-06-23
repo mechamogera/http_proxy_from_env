@@ -1,7 +1,7 @@
 require 'uri'
 
 class URI::Generic
-  unless method_define? :find_proxy
+  unless method_defined? :find_proxy
     def find_proxy
       raise BadURIError, "relative URI: #{self}" if self.relative?
       name = self.scheme.downcase + '_proxy'
