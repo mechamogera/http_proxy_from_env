@@ -1,4 +1,5 @@
 require 'net/http'
+require 'http_proxy_from_env/uri/generic.rb'
 
 class Net::HTTP
   unless method_defined?(:proxy_from_env)
@@ -51,6 +52,12 @@ class Net::HTTP
     @proxy_user     = nil
     @proxy_pass     = nil
 
+    attr_writer :proxy_from_env
+    attr_writer :proxy_address
+    attr_writer :proxy_port
+    attr_writer :proxy_user
+    attr_writer :proxy_pass
+
     def proxy?
       if @proxy_from_env then
         proxy_uri
@@ -92,11 +99,11 @@ class Net::HTTP
     end
 
     def conn_address
-      proxy? proxy_address : address
+      proxy? ? proxy_address : address
     end
 
     def conn_port
-      proxy? proxy_port : prot
+      proxy? ? proxy_port : prot
     end
   end
 
