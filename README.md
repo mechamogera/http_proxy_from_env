@@ -20,11 +20,22 @@ Or install it yourself as:
 ## Usage
 
 ```
+# only net/http patch
 require 'http_proxy_from_env/net/http'
 ```
 
+or
+
 ```
+# only open-uri patch
 require 'http_proxy_from_env/open-uri'
+```
+
+or
+
+```
+# all patch
+require 'http_proxy_from_env
 ```
 
 ## Contributing
