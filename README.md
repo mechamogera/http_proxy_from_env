@@ -20,7 +20,11 @@ Or install it yourself as:
 ## Usage
 
 ```
-require 'http_proxy_from_env'
+require 'http_proxy_from_env/net/http'
+```
+
+```
+require 'http_proxy_from_env/open-uri'
 ```
 
 ## Contributing
