@@ -1,6 +1,7 @@
 # HttpProxyFromEnv
 
-TODO: Write a gem description
+Net::HTTP automatically detects and uses proxies from the environment.
+http\_proxy\_from\_env is made from https://bugs.ruby-lang.org/projects/ruby-trunk/repository/revisions/36476
 
 ## Installation
 
@@ -18,7 +19,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'http_proxy_from_env'
+```
 
 ## Contributing
 

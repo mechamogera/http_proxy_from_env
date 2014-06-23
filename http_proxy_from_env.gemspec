@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = HttpProxyFromEnv::VERSION
   spec.authors       = ["mechamogera"]
   spec.email         = ["mechamosura@gmail.com"]
-  spec.description   = %q{description}
-  spec.summary       = %q{summary}
+  spec.description   = %q{Net::HTTP automatically detects and uses proxies from the environment.}
+  spec.summary       = %q{Net::HTTP automatically detects and uses proxies from the environment.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
