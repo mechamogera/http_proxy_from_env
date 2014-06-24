@@ -1,6 +1,7 @@
 # HttpProxyFromEnv
 
 Net::HTTP automatically detects and uses proxies from the environment.
+
 http\_proxy\_from\_env is made from https://bugs.ruby-lang.org/projects/ruby-trunk/repository/revisions/36476
 
 ## Installation

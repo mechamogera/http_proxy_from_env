@@ -109,7 +109,7 @@ class Net::HTTP
 
   def proxy_user
     if @proxy_from_env then
-      proxy_uri && proxy_uri.user
+      @proxy_user ||  proxy_uri && proxy_uri.user
     else
       @proxy_user
     end
@@ -117,7 +117,7 @@ class Net::HTTP
 
   def proxy_pass
     if @proxy_from_env then
-      proxy_uri && proxy_uri.password
+      @proxy_pass || proxy_uri && proxy_uri.password
     else
       @proxy_pass
     end
