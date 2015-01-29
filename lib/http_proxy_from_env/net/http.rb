@@ -103,7 +103,7 @@ class Net::HTTP
     end
 
     def conn_port
-      proxy? ? proxy_port : prot
+      proxy? ? proxy_port : port
     end
   end
 
